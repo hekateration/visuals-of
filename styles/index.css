@@ -1,0 +1,22 @@
+h2
+{
+  font-size: 21px;
+}
+
+.main-header
+{
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+  font-size: 42px;
+}
+.main-title
+{
+  font-family: 'Black Ops One', sans-serif;
+  margin-right: 21px;
+  font-size: 49px;
+}
+.main-side-titles
+{
+  margin-left: 14px;
+}
