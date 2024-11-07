@@ -360,7 +360,6 @@ a
   z-index: 35;
   height: 42px;
   padding: 0 14px;
-  --color: #444a75;
   font-family: 'Allerta Stencil', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -384,10 +383,9 @@ a.link
   align-items: center;
   height: 28px;
   padding: 0 14px;
-  border: 1px solid #215092;
-  border-radius: 7px 7px 0 7px;
+  border: 1px solid #27425d;
+  border-radius: 0 7px 7px 7px;
   background-color: rgba(174, 173, 171, .07);
-
   color: inherit;
   font-family: 'Allerta Stencil', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 16px;
@@ -399,33 +397,37 @@ a.link:before
 {
   content: '';
   position: absolute;
-  top: 4px;
-  right: -4px;
-  bottom: -4px;
-  left: 4px;
+  top: -4px;
+  right: 4px;
+  bottom: 4px;
+  left: -4px;
   z-index: -2;
-  border-radius: 7px 7px 0 7px;
+  border-radius: 0 7px 7px 7px;
   background-color: #fff;
 }
 a.link:after
 {
   content: '';
   position: absolute;
-  top: -4px;
-  right: 4px;
-  bottom: 4px;
-  left: -4px;
+  top: 4px;
+  right: -4px;
+  bottom: -4px;
+  left: 4px;
   z-index: -3;
   border-radius: 7px 7px 0 7px;
-  background-color: rgba(241, 234, 81, .77);
+  background-color: rgba(145, 144, 139, 0.77);
 }
-.rotate-180
+a.link .rotate-180
 {
   transform: rotate(180deg);
 }
+a.link.muted:before
+{
+  background-color: rgba(255, 255, 255, 0.56);
+}
 a.link.muted:after
 {
-  background-color: rgba(241, 234, 81, .35);
+  background-color: rgba(145, 144, 139, 0.21);
 }
 
 
